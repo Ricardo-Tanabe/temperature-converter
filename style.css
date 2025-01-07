@@ -1,0 +1,104 @@
+:root {
+    --inner-space: 7px 10px;
+}
+
+/* Para navegadores WebKit (Chrome, Safari, Edge) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Para Firefox */
+/* input[type="number"] {
+    -moz-appearance: textfield;
+} */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+}
+
+.title {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.info {
+    margin: 5px 0 10px;
+    padding: 0;
+}
+
+.selectors {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#input {
+    all: unset;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50px;
+    padding: var(--inner-space);
+    text-align: center;
+}
+
+.btn {
+    all: unset;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100px;
+    padding: var(--inner-space);
+    align-items: center;
+    justify-content: space-between;
+}
+
+#convert {
+    all: unset;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    padding: var(--inner-space);
+    text-align: center;
+}
+
+#convert:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.dropdown {
+    position: absolute;
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin: 0;
+    width: 100px;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: var(--inner-space);
+    z-index: 1;
+}
+
+.dropdown *:hover {
+    text-decoration: underline blue;
+    color: blue;
+    cursor: pointer;
+}
+
+.result {
+    margin: 10px 0;
+    color: rgb(0, 210, 0);
+}

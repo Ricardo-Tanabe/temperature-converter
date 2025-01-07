@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="O objetivo é criar um conversor de temperaturas." />
+    <meta name="keywords" content="JavaScript, Temperature Converter, Projeto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Temperature Converter</h2>
+        <p class="info">Enter the temperature,  select units and submit</p>
+        <div class="selectors">
+            <input id="input" type="number" value="0">
+            <button id="fromUnit" class="btn">
+                <span>From Unit</span>
+                <span>▼</span>
+                <ul class="dropdown" style="display: none;">
+                    <li>Fahrenheit</li>
+                    <li>Celsius</li>
+                    <li>Kelvin</li>
+                </ul>
+            </button>
+            <button id="toUnit" class="btn">
+                <span>To Unit</span>
+                <span>▼</span>
+                <ul class="dropdown" style="display: none;">
+                    <li>Fahrenheit</li>
+                    <li>Celsius</li>
+                    <li>Kelvin</li>
+                </ul>
+            </button>
+            <button id="convert">Convert</button>
+        </div>
+        <div class="result">.</div>
+    </div>
+</body>
+</html>
+
+<!-- ▲ -->
